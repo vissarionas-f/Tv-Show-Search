@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- for mobile -->
+
+  <title>Search with tvmaze API</title>
+
+  <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <!-- icons -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="decorationstyle.css">
+
+  <!-- axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+
+<body>
+
+  <div class="container">
+    <header class="row d-flex justify-content-center">
+      <div class="col-8">
+        <a href="Movie shows search.html"><h1>Search TV Shows and their Actors</h1></a>
+      </div>
+    </header>
+    
+
+    <form id="search" class="input-group d-flex justify-content-center">
+      <input type="text" class="form-control" placeholder="Series and Actors" name="query">
+      <button class="btn btn-light">Search</button>
+    </form>
+
+    <div class="d-flex justify-content-end">
+      <button id="clear" class="btn btn-dark">clear search</button>
+    </div>
+
+  </div>
+  
+  
+  <div id="results" class="container grid">
+
+    <!-- landing starter that clears when search -->
+      <div class="col-md-12">
+        <div id="results-card" class="card">
+          <div class="row g-0">
+            <div class="col-lg-4 d-flex justify-content-center">
+              <img src="imgs/ted_lasso.jpg" alt="ted_lasso" class="img-fluid">
+            </div>
+            <div class="col-lg-8">
+              <div class="card-body">
+                <h5 class="card-title text-center">Ted Lasso</h5>
+                <p class="card-text">Ted Lasso centers on an idealistic — and clueless — all-American football coach hired to
+                  manage an English football club — despite having no soccer coaching experience at all.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-12">
+        <div id="results-card" class="card">
+          <div class="row g-0">
+            <div class="col-lg-4 d-flex justify-content-center">
+              <img src="imgs/brooklyn_99.jpg" alt="brooklyn_99" class="img-fluid">
+            </div>
+            <div class="col-lg-8">
+              <div class="card-body">
+                <h5 class="card-title text-center">Brooklyn Nine-Nine</h5>
+                <p class="card-text">Brooklyn Nine-Nine is an ensemble comedy about a talented-but-carefree detective, a
+                  by-the-book police captain and their
+                  precinct colleagues. While based in the workplace, Brooklyn Nine-Nine is not really about the job – it's
+                  about the men
+                  and women behind the badge.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+  </div> <!-- end of results container -->
+
+  <h2></h2>
+
+  <div id="results-actors" class="container grid"></div>
+  
+
+  <!-- back to top button -->
+  <a href="#" class="d-none d-md-block">
+    <button id="scrollButton" class="btn btn-dark btn-lg">&#8593;</button>
+  </a>
+
+  <!-- js -->
+  <script src="script.js"></script>
+
+  <!-- bootstrap.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

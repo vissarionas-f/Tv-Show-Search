@@ -1,0 +1,76 @@
+body {
+	background: rgb(210, 105, 30);
+	background: linear-gradient(90deg, rgb(210, 105, 30) 0%, rgb(212, 141, 17) 53%, rgb(241, 154, 31) 100%); 
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	text-transform: uppercase;
+	padding: 1rem;
+	text-align: center;
+	margin-top: 2rem;
+	border-radius: 1rem;
+	background-image: url(imgs/andrew-neel-z55CR_d0ayg-unsplash\ 1.jpg);
+	background-position: center;
+	background-size: cover;
+	color: whitesmoke;
+}
+
+form {
+	font-family: "Pacifico";
+}
+
+form .form-control {
+	max-width: 20rem;
+}
+
+#clear {
+	margin-top: 1rem; /* clear button has top space */
+}
+
+/* results of series and actors */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.7rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+	.grid {
+		display: block; /* responsive */
+	}
+	#results div.col-md-12, #results-actors div.col-md-12 { /* cards have a gap */
+		margin-bottom: 1rem;
+	}
+}
+
+@media (min-width:992px) {
+	div.col-lg-4 img.img-fluid {
+		height: 295px; /* no img stretching */
+	}
+}
+
+div#results-card {
+	background: #d35115;
+	color: whitesmoke;
+}
+
+/* Actors' heading */
+h2 {
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+#scrollButton {
+	position: fixed;
+	right: 2rem;
+	bottom: 1rem;
+	color: rgb(245, 245, 245);
+	font-size: 1.8rem;
+	display: none;
+}

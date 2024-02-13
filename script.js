@@ -1,6 +1,6 @@
 const form = document.querySelector("#search");
 const shows = document.querySelector("#results");
-const actors = document.querySelector("#results-actors")
+const actors = document.querySelector("#results-actors");
 const clearsearch = document.querySelector("#clear");
 const h2 = document.querySelector("h2");
 
@@ -33,7 +33,7 @@ const searchSeries = async () => {
         }
     } catch {
         const err = document.createElement("h5");
-        err.className = "text-center";
+        err.className = "text-center error-msg";
         err.innerText = "something happened, try again later...or don't";
         shows.appendChild(err);
     }
@@ -66,6 +66,7 @@ const searchPeople = (actor) => {
     for (let i of actor) {
         if (i.person.image) {
             h2.innerHTML = "Actors"; //i put it here to be displayed if there are actors
+            h2.className = "actor-h"
             let img = i.person.image.medium;
             let title = i.person.name;
             let summary = `${title} is from the ${i.person.country.name}<br> Born on ${i.person.birthday}`;
@@ -78,7 +79,7 @@ const card = (imgs, titles, text) => { //building the card
     //making the first div
     let div = [];
     div[1] = document.createElement("div");
-    div[1].className = "col-md-12";
+    div[1].className = "col-md-12 align-self-center";
     
     //creating 3 more divs, nested inside the other
     for (let i = 2; i < 5; i++) {
@@ -89,7 +90,7 @@ const card = (imgs, titles, text) => { //building the card
     div[2].className = "card";
     div[2].id = "results-card";
     div[3].className = "row g-0";
-    div[4].className = "col-lg-4 d-flex justify-content-center";
+    div[4].className = "col-lg-4 d-flex justify-content-center align-items-center";
     
     //card-img
     const img = document.createElement("img");

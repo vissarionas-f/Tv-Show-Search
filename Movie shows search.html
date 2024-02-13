@@ -17,7 +17,7 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
   <!-- icons -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -43,7 +43,9 @@
 
     <form id="search" class="input-group d-flex justify-content-center">
       <input type="text" class="form-control" placeholder="Series and Actors" name="query">
-      <button class="btn btn-light">Search</button>
+      <button class="btn btn-light">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
     </form>
 
     <div class="d-flex justify-content-end">
@@ -59,7 +61,7 @@
       <div class="col-md-12">
         <div id="results-card" class="card">
           <div class="row g-0">
-            <div class="col-lg-4 d-flex justify-content-center">
+            <div class="col-lg-4 d-flex justify-content-center aligh-items-center">
               <img src="imgs/ted_lasso.jpg" alt="ted_lasso" class="img-fluid">
             </div>
             <div class="col-lg-8">
@@ -96,7 +98,9 @@
     
   </div> <!-- end of results container -->
 
-  <h2></h2>
+  <div class="d-flex justify-content-center">
+    <h2></h2>
+  </div>
 
   <div id="results-actors" class="container grid"></div>
   

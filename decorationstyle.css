@@ -1,6 +1,8 @@
 body {
-	background: rgb(210, 105, 30);
-	background: linear-gradient(90deg, rgb(210, 105, 30) 0%, rgb(212, 141, 17) 53%, rgb(241, 154, 31) 100%); 
+	background-image: url(imgs/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+	background-position: center;
+	background-size: contain;
+	/* background-repeat: no-repeat; */
 }
 
 a {
@@ -31,6 +33,17 @@ form .form-control {
 	margin-top: 1rem; /* clear button has top space */
 }
 
+h5 {
+	/* color: #4f092b; */
+	background-color: #4f092b;
+	padding: 0.8rem;
+	border-radius: 10px;
+}
+
+h5.error-msg {
+	color: whitesmoke;
+}
+
 /* results of series and actors */
 .grid {
     display: grid;
@@ -55,15 +68,26 @@ form .form-control {
 	}
 }
 
-div#results-card {
+div#results-card, img.img-fluid {
 	background: #d35115;
 	color: whitesmoke;
+	border-radius: 50px;
+}
+
+img.img-fluid {
+	margin: 0.8rem;
+	margin-left: 1.1rem;
 }
 
 /* Actors' heading */
-h2 {
+h2.actor-h {
 	text-align: center;
 	font-size: 2.5rem;
+	background-color: rgb(205, 188, 188);
+	color: #350026;
+	min-width: 15rem;
+	padding: 1.2rem;
+	border-radius: 10px;
 }
 
 #scrollButton {
